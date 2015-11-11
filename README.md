@@ -6,7 +6,7 @@ mvn archetype:generate -DgroupId=com.bigdata.tp2 -DartifactId=hbaseapp -Darchety
 mvn eclipse:eclipse
 ```
 
-We change the POM.XML file to add some dependencies to HBase server and client.
+We change the POM.xml file to add some dependencies to HBase server and client.
 ```
 <dependency>
   <groupId>org.apache.hbase</groupId>
@@ -20,7 +20,7 @@ We change the POM.XML file to add some dependencies to HBase server and client.
 </dependency>
 ```
 
-We add this part to create a ressource conf/hbase-site.xml which contains configuration information for HBase.  
+We add this part to create a ressource `conf/hbase-site.xml` which contains configuration information for HBase.  
 It also configures Maven Compiler Plugin and Maven Shade Plugin.
 ```
 <build>
@@ -67,7 +67,7 @@ It also configures Maven Compiler Plugin and Maven Shade Plugin.
 </build>
 ```
 
-On a new repository "conf" we create a xml file to have HBase configuration into the Java project directory.
+On a new repository `conf` we create a xml file to have HBase configuration into the Java project directory.
 ```
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
