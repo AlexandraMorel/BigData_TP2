@@ -84,3 +84,10 @@ We redo the command:
 ```
 mvn eclipse:eclipse
 ```
+
+### Create table MusicLibrary with REPL
+```
+kinit hbase@HADOOP.RYBA
+hbase > shell
+hbase > create table 'MusicLibrary', 'artist', 'song', 'album'
+
