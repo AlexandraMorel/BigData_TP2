@@ -92,7 +92,7 @@ We redo the command:
 mvn eclipse:eclipse
 ```
 
-### Create table MusicLibrary with REPL
+### Create table MusicLibrary
 ```
 kinit hbase@HADOOP.RYBA
 hbase > shell
@@ -103,5 +103,6 @@ hbase > create table 'MusicLibrary', 'artist', 'song', 'album'
 `song` is also a family column, it gives details about the song (name, path, user's mark).  
 `album` is the last family column with informations about the album (name, path of the cover, number of songs).  
 
+### Management of data 
 
 We program ManageHBase.java which allows to create a new record and delete one with its key.
