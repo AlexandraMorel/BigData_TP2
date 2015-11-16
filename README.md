@@ -102,7 +102,9 @@ hbase > create table 'MusicLibrary', 'artist', 'song', 'album'
 `artist` is one of the family column which contains informations about the author of the song (singer's name, producter's name).  
 `song` is also a family column, it gives details about the song (name, path, user's mark).  
 `album` is the last family column with informations about the album (name, path of the cover, number of songs).  
+Each columnn family is stored as one file (HFile) in HDFS.
 
 ### Management of data 
 
-We program ManageHBase.java which allows to create a new record and delete one with its key.
+We program ManageHBase.java which allows to create a new record and delete one with its key.  
+We create Research.java to search one or all files.
