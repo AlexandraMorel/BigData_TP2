@@ -122,5 +122,6 @@ mvn jar:jar
 The command to launch the JAR on HBase is:
 
 ```
-hbase > java -jar hbaseapp-1.0-SNAPSHOT.jar
+export HADOOP_CLASSPATH=`./hbase classpath`
+hadoop jar hbaseapp-1.0-SNAPSHOT.jar ./com/bigdata/tp2/Menu.java
 ```
