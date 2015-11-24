@@ -107,4 +107,10 @@ Each columnn family is stored as one file (HFile) in HDFS.
 ### Management of data 
 
 We program ManageHBase.java which allows to create a new record and delete one with its key.  
-We create Research.java to search one or all files.
+We create Research.java to search one or all files on the music library.
+We also create a Menu.java which allows the user to make all these actions and only stop when the user chooses the command "quit".
+
+### REPL actions
+We launch the Menu.java with the HBase REPL.
+```
+```
