@@ -111,6 +111,16 @@ We create Research.java to search one or all files on the music library.
 We also create a Menu.java which allows the user to make all these actions and only stop when the user chooses the command "quit".
 
 ### REPL actions
+
 We launch the Menu.java with the HBase REPL.
+First, we create the jar file.
+
 ```
+mvn jar:jar
+```
+
+The command to launch the JAR on HBase is:
+
+```
+hbase > java -jar hbaseapp-1.0-SNAPSHOT.jar
 ```
